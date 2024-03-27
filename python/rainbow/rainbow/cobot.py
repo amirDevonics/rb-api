@@ -783,7 +783,7 @@ def GetCurrentCobotStatus():
 
     if systemstat_global.robot_state == 1:
         return COBOT_STATUS.IDLE
-    elif systemstat_global.robot_stat == 3:
+    elif systemstat_global.robot_state == 3:
         return COBOT_STATUS.RUNNING
     else:
         return COBOT_STATUS.UNKNOWN
